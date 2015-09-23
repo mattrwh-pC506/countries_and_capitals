@@ -26,6 +26,7 @@
 				</div>
 			</div>
 			<div class="row col s12">
+				<h4 ng-hide="neighbours.length == 0" ng-cloak>Neighboring Countries</h4>
 				<a href="#/country/{{neighbour.countryCode}}" ng-repeat="neighbour in neighbours" class="btn-flat btn-large white-text amber darken-3 neighbour">{{neighbour.countryName}}</a>
 			</div>
 			<div class="row col s12">
