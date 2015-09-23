@@ -9,7 +9,7 @@
 <title>Countries and Capitals</title>
 </head>
 
-<body class="owm-body" ng-class="{loading: isLoading}">
+<body class="owm-body">
 
 <nav class="amber accent-4 white-text">
     <div class="nav-wrapper">
@@ -20,12 +20,14 @@
         </ul>
     </div>
 </nav>
+<div  id="super-container" ng-class="{loading: isLoading}">
 
 <div class="container main">
 	<div class="animate-view-container">
         <div ng-view class="animate-view center-align"></div>
     </div>
 </div>
+<div>
   
 <!-- build:js ./_assets/combined.js -->
 <script src="./bower_components/jquery/dist/jquery.js"></script>
