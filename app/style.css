@@ -19,7 +19,7 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 
 body {
-	background-color: #1F1F1F;
+	background-color: #eee;
 }
 
 .main {	
@@ -93,7 +93,7 @@ body, html {
 
 #super-container {
   position: absolute;
-  top: 64px;
+  top: 75px;
   left: 0;
   right: 0;
   bottom: 0;
