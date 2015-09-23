@@ -14,10 +14,10 @@
 					</div>
 				</div>
 				<div class="col s6 valign">
-					<h5>Population of Country: {{country.population}}</h5>
-					<h5>Area: {{country.areaInSqKm}}</h5>
-					<h5>CapitalL {{country.capital}}</h5>
-					<h5>Population of Capital: {{capital.population}}</h5>
+					<h5>Population of Country: {{country.population | number:0}}</h5>
+					<h5>Area: {{country.areaInSqKm | number:2}} km2</h5>
+					<h5>Capital: {{country.capital}}</h5>
+					<h5>Population of Capital: {{capital.population | number:0}}</h5>
 				</div>
 				<div class="col s3 valign">
 					<div class="row flag-box">
