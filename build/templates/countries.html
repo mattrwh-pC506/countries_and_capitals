@@ -3,7 +3,7 @@
 		<input ng-model="query" type="text" placeholder="Filter by" autofocus>
 	</div>
 	<div class="countries-box">
-		<table class="countries centered highlight bordered responsive-table">
+		<table class="countries highlight responsive-table striped">
 			<thead>
 				<tr>
 					<th ng-click="sfield = 'countryName'">Name</th>
@@ -19,8 +19,8 @@
 					<td>{{country.countryName}}</td>
 					<td>{{country.countryCode}}</td>
 					<td>{{country.capital}}</td>
-					<td>{{country.areaInSqKm}}</td>
-					<td>{{country.population}}</td>
+					<td>{{country.areaInSqKm | number:0}}</td>
+					<td>{{country.population | number:0}}</td>
 					<td>{{country.continent}}</td>
 				</tr>
 			</tbody>

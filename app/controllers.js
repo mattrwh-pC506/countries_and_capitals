@@ -33,7 +33,7 @@ app.controller('CountryController', [
 ]);
 
 app.controller('HomeController', ["$scope", function($scope) {
-	$scope.about = "This is last app you will ever need. All " +
+	$scope.about = "This is the last app you will ever need. All " +
 					"the world's knowledge is now at your " +
 					"fingertips. You're welcome."
 }]);

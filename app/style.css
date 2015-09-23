@@ -10,8 +10,8 @@ input[type="tel"]:focus:not([readonly]),
 input[type="number"]:focus:not([readonly]), 
 input[type="search"]:focus:not([readonly]), 
 textarea.materialize-textarea:focus:not([readonly]) {
-    border-bottom: 1px solid #FFF !important;
-    box-shadow: 0px 1px 0px 0px #FFF !important;
+    border-bottom: 1px solid #212121 !important;
+    box-shadow: 0px 1px 0px 0px #212121 !important;
 }
 
 [ng\:cloak], [ng-cloak], .ng-cloak {
@@ -97,4 +97,33 @@ body, html {
   left: 0;
   right: 0;
   bottom: 0;
+}
+
+.neighbour {
+  margin: 5px;
+}
+
+::-webkit-input-placeholder {
+   color: #212121;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #212121;  
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #212121;  
+}
+
+:-ms-input-placeholder {  
+   color: #212121;  
+}
+
+.back {
+  width: 400px;
+  padding: auto;
+}
+
+.nav-wrapper {
+  padding-left: 20px;
 }

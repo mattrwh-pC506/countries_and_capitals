@@ -26,7 +26,10 @@
 				</div>
 			</div>
 			<div class="row col s12">
-				<a href="#/countries" class="btn-flat btn-large white-text blue-grey darken-4">Back</a>
+				<a href="#/country/{{neighbour.countryCode}}" ng-repeat="neighbour in neighbours" class="btn-flat btn-large white-text amber darken-3 neighbour">{{neighbour.countryName}}</a>
+			</div>
+			<div class="row col s12">
+				<a href="#/countries" class="btn-flat btn-large white-text blue-grey darken-4 back">Back</a>
 			</div>
 		</div>	
 	</div>
