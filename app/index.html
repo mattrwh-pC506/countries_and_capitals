@@ -9,8 +9,23 @@
 <title>Countries and Capitals</title>
 </head>
 
-<body class="owm-body">
+<body class="owm-body" ng-class="{loading: isLoading}">
 
+<nav class="amber accent-4 white-text">
+    <div class="nav-wrapper">
+        <a href="#/" class="brand-logo white-text">For King and Country and Capitals</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="#/" class="white-text">Home</a></li>
+          <li><a href="#/countries" class="white-text">Browse</a></li>
+        </ul>
+    </div>
+</nav>
+
+<div class="container main">
+	<div class="animate-view-container">
+        <div ng-view class="animate-view center-align"></div>
+    </div>
+</div>
   
 <!-- build:js ./_assets/combined.js -->
 <script src="./bower_components/jquery/dist/jquery.js"></script>
@@ -20,6 +35,8 @@
 <script src="./bower_components/angular-animate/angular-animate.js"></script>
 <script src="./bower_components/angular-materialize/src/angular-materialize.js"></script>
 <script src="./app.js"></script>
+<script src="./geoAPI.js"></script>
+<script src="./controllers.js"></script>
 <!-- endbuild -->
 </body>
 </html>

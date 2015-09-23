@@ -1,0 +1,29 @@
+<div ng-controller="CountriesController" class="white-text">
+	<div class="row col s12">
+		<input ng-model="query" type="text" placeholder="Filter by" autofocus>
+	</div>
+	<div class="countries-box">
+		<table class="countries centered highlight bordered responsive-table">
+			<thead>
+				<tr>
+					<th ng-click="sfield = 'countryName'">Name</th>
+					<th ng-click="sfield = 'countryCode'">Country Code</th>
+					<th ng-click="sfield = 'capital'">Capital</th>
+					<th ng-click="sfield = 'areaInSqKm'">Area in km2</th>
+					<th ng-click="sfield = 'population'">Population</th>
+					<th ng-click="sfield = 'continent'">Continent</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="country in countries | filter:query | orderBy: sfield || 'countryName'" ng-cloak="" ng-click="go(country.countryCode)">
+					<td>{{country.countryName}}</td>
+					<td>{{country.countryCode}}</td>
+					<td>{{country.capital}}</td>
+					<td>{{country.areaInSqKm}}</td>
+					<td>{{country.population}}</td>
+					<td>{{country.continent}}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

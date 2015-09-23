@@ -1,0 +1,34 @@
+<div>
+	<div ng-controller="CountryController" class="white-text">
+		
+		<div class="row">
+			<div class="row valign-wrapper">
+				<div class="col m12 valign">
+					<h1>{{country.countryName}}</h1>
+				</div>
+			</div>
+			<div class="row valign-wrapper">			
+				<div class="col s3 valign">
+					<div class="row map-box">
+						<img id='map' ng-src="http://www.geonames.org/img/country/250/{{country.countryCode}}.png" />
+					</div>
+				</div>
+				<div class="col s6 valign">
+					<h5>Population of Country: {{country.population}}</h5>
+					<h5>Area: {{country.areaInSqKm}}</h5>
+					<h5>CapitalL {{country.capital}}</h5>
+					<h5>Population of Capital: {{capital.population}}</h5>
+				</div>
+				<div class="col s3 valign">
+					<div class="row flag-box">
+						<img id="flag" ng-src="http://www.geonames.org/flags/x/{{country.countryCode|lowercase}}.gif" />
+					</div>
+				</div>
+			</div>
+			<div class="row col s12">
+				<a href="#/countries" class="btn-flat btn-large white-text blue-grey darken-4">Back</a>
+			</div>
+		</div>	
+	</div>
+</div>
+
