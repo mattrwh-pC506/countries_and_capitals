@@ -15,7 +15,6 @@ app.controller('CountriesController', [
 app.controller('CountryController', [
     '$scope', '$route', '$log', 'geoNamesDataService',
     function($scope, $route, $log, geoNamesDataService) {
-    	$log.log($route.current.params.countryCode);
 
         geoNamesDataService.getCountry($route.current.params.countryCode)
 	        .then(function(result) {
